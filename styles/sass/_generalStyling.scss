@@ -1,0 +1,53 @@
+$black: #2c2c2c;
+$offWhite: #f0efed;
+$forestGreen: #074115;
+$green: #0e902d;
+$yellow: #f8e71c;
+
+$bigFont: Josefin Sans;
+
+@mixin heading($fontSize) {
+    color: $black;
+    font-size: $fontSize;
+    font-weight: 700;
+    font-family: 'Josefin Sans';
+}
+
+html {
+    font-size: 62.5%;
+}
+
+    // The below code came from a post on css-tricks.com on Fluid Typography, and its author is Mike Riethmueller (https://www.madebymike.com.au/).
+    // font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+
+body {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 2rem;
+    // font-size: calc(1rem + (8rem - 1rem) * ((100vw - 320px) / (1400 - 320)));
+    line-height: 3.2rem;
+    color: $black;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.button {
+    display: inline-block;
+    background-color: $green;
+    color: $offWhite;
+    font-family: $bigFont;
+    padding: 20px 40px
+}

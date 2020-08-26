@@ -202,6 +202,16 @@ template {
   display: none;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -233,4 +243,39 @@ html {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  color: #2c2c2c;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.button {
+  display: inline-block;
+  background-color: #0e902d;
+  color: #f0efed;
+  font-family: Josefin Sans;
+  padding: 20px 40px;
 }
