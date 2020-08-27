@@ -54,30 +54,48 @@ header {
     .headerImg {
         height: 80%;
         width: 41%;
-        position: absolute;
+        position: relative;
         bottom: -80px;
         right: 0;
-
         img {
             width: 100%;
         }
     }
+
+    .heading1 {
+        margin: 0 auto;
+        width: 50%;
+        height: 100%;
+        z-index: 10;
+
+        h1 {
+            @include heading($yellow, 166px, 400);
+            line-height: 120px;
+            .white {
+                color: $offWhite;    
+            }
+        }
+    }
+
+    .heading2 {
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    .heading3 {
+        margin: 0 auto;
+        width: 50%;
+    }
 }
 
 .homeBanner {
-    background-image: url(../plantedFinalAssets/homeImage1.jpg);
-    background-position: left;
-    background-size: cover;
+    @include headerImage('../plantedFinalAssets/homeImage1.jpg');
 }
 
 .blogBanner {
-    background-image: url(../plantedFinalAssets/blogHeader1.jpg);
-    background-position: left;
-    background-size: cover;
+    @include headerImage('../plantedFinalAssets/blogHeader1.jpg');
 }
 
 .bruceBanner {
-    background-image: url(../plantedFinalAssets/contactHeader3.jpg);
-    background-position: left;
-    background-size: cover;
+    @include headerImage('../plantedFinalAssets/contactHeader1.jpg');
 }

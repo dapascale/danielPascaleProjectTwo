@@ -355,20 +355,37 @@ header .headerImg img {
   width: 100%;
 }
 
+header .heading1 {
+  margin: 0 auto;
+  width: 50%;
+}
+
+header .heading1 h1 {
+  color: #f8e71c;
+  font-size: 9rem;
+  font-weight: 400;
+  font-family: 'Josefin Sans';
+  line-height: 120px;
+}
+
+header .heading1 h1 .white {
+  color: #f0efed;
+}
+
 .homeBanner {
-  background-image: url(../plantedFinalAssets/homeImage1.jpg);
+  background-image: url("../plantedFinalAssets/homeImage1.jpg");
   background-position: left;
   background-size: cover;
 }
 
 .blogBanner {
-  background-image: url(../plantedFinalAssets/blogHeader1.jpg);
+  background-image: url("../plantedFinalAssets/blogHeader1.jpg");
   background-position: left;
   background-size: cover;
 }
 
 .bruceBanner {
-  background-image: url(../plantedFinalAssets/contactHeader3.jpg);
+  background-image: url("../plantedFinalAssets/contactHeader1.jpg");
   background-position: left;
   background-size: cover;
 }
