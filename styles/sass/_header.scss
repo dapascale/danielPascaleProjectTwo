@@ -1,6 +1,7 @@
 header {
     height: 100vh;
     padding: 30px 0 100px;
+}
 
     .skipLink {
         position: absolute;
@@ -14,77 +15,91 @@ header {
         padding: 20px;
     }
 
-    .skipLink:focus {
-        right: 10px;
-        top: 10px;
+.skipLink:focus {
+    right: 10px;
+    top: 10px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 55%;
+    margin: 0 auto 0 20px;
+
+    li a {
+        color: $offWhite;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        font-size: 1rem;
     }
 
-    nav ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 55%;
-        margin: 0 auto 0 20px;
-
-        li a {
-            color: $offWhite;
-            padding: 10px 20px;
-            text-transform: uppercase;
-            font-size: 1rem;
-        }
-
-        .logo {
-            text-transform: capitalize;
-            font-size: 2.5rem;
-        }
-
-        .logo,
-        li a {
-            transition: all 0.2s ease-in-out;
-        }
-
-        .logo:hover,
-        .logo:focus,
-        li a:hover,
-        li a:focus {
-            color: $yellow;
-        }
-    }
-    
-    .headerImg {
-        height: 80%;
-        width: 41%;
-        position: relative;
-        bottom: -80px;
-        right: 0;
-        img {
-            width: 100%;
-        }
+    .logo {
+        text-transform: capitalize;
+        font-size: 2.5rem;
     }
 
-    .heading1 {
-        margin: 0 auto;
-        width: 50%;
-        height: 100%;
-        z-index: 10;
+    .logo,
+    li a {
+        transition: all 0.2s ease-in-out;
+    }
 
-        h1 {
-            @include heading($yellow, 166px, 400);
-            line-height: 120px;
-            .white {
-                color: $offWhite;    
-            }
+    .logo:hover,
+    .logo:focus,
+    li a:hover,
+    li a:focus {
+        color: $yellow;
+    }
+}
+
+.headerImg {
+    height: 80%;
+    width: 41%;
+    position: relative;
+    bottom: -80px;
+    right: 0;
+    img {
+        width: 100%;
+    }
+}
+
+.heading1 {
+    margin: 0 auto;
+    width: 50%;
+    height: 100%;
+    z-index: 10;
+
+    h1 {
+        @include heading($yellow, 166px, 400);
+        line-height: 120px;
+        .white {
+            color: $offWhite;    
         }
     }
+}
+.heading2 {
+    margin: 0 auto;
+    width: 50%;
 
-    .heading2 {
-        margin: 0 auto;
-        width: 50%;
+    h1 {
+        color: #f8e71c;
+        font-size: 9rem;
+        font-weight: 400;
+        font-family: 'Josefin Sans';
+        line-height: 120px;
     }
+}
 
-    .heading3 {
-        margin: 0 auto;
-        width: 50%;
+.heading3 {
+    margin: 0 auto 0 100px;
+    width: 50%;
+
+    h1 {
+        color: #f8e71c;
+        font-size: 7rem;
+        font-weight: 400;
+        font-family: 'Josefin Sans';
+        line-height: 120px;
     }
 }
 

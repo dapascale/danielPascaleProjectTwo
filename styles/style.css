@@ -275,11 +275,20 @@ a {
   color: inherit;
 }
 
-.button {
-  display: inline-block;
+a.button {
+  display: block;
   background-color: #0e902d;
   color: #f0efed;
-  padding: 20px 40px;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: 3px solid #f0efed;
+  margin: 0 auto;
+  transition: all 0.3s ease-in-out;
+}
+
+a.button:focus,
+a.button:hover {
+  border: 3px solid #f8e71c;
 }
 
 header {
@@ -318,32 +327,32 @@ header nav ul {
   margin: 0 auto 0 20px;
 }
 
-header nav ul li a {
+nav li a {
   color: #f0efed;
   padding: 10px 20px;
   text-transform: uppercase;
   font-size: 1rem;
 }
 
-header nav ul .logo {
+nav ul .logo {
   text-transform: capitalize;
   font-size: 2.5rem;
 }
 
-header nav ul .logo,
-header nav ul li a {
+ul .logo,
+ul li a {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
-header nav ul .logo:hover,
-header nav ul .logo:focus,
-header nav ul li a:hover,
-header nav ul li a:focus {
+ul .logo:hover,
+ul .logo:focus,
+ul li a:hover,
+ul li a:focus {
   color: #f8e71c;
 }
 
-header .headerImg {
+.headerImg {
   height: 80%;
   width: 41%;
   position: absolute;
@@ -351,16 +360,20 @@ header .headerImg {
   right: 0;
 }
 
-header .headerImg img {
+.headerImg img {
   width: 100%;
 }
 
-header .heading1 {
+.heading1 {
   margin: 0 auto;
-  width: 50%;
+  width: 42%;
+  height: 100px;
+  position: relative;
+  top: 100px;
+  z-index: 10;
 }
 
-header .heading1 h1 {
+.heading1 h1 {
   color: #f8e71c;
   font-size: 9rem;
   font-weight: 400;
@@ -368,9 +381,65 @@ header .heading1 h1 {
   line-height: 120px;
 }
 
-header .heading1 h1 .white {
+.heading1 h1 .white {
   color: #f0efed;
 }
+
+/* this is where you began writing code directly in, come back and edit later, but you also edited nesting */
+.heading2 {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.heading2 h1 {
+  color: #f8e71c;
+  font-size: 9rem;
+  font-weight: 400;
+  font-family: 'Josefin Sans';
+  line-height: 120px;
+}
+
+.heading3 {
+  margin: 0 auto 0 100px;
+  width: 50%;
+}
+
+.heading3 h1 {
+  color: #f8e71c;
+  font-size: 7rem;
+  font-weight: 400;
+  font-family: 'Josefin Sans';
+  line-height: 120px;
+}
+
+.about {
+  padding: 100px 0 150px;
+  background-color: #f0efed;
+}
+
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto 0;
+  text-align: center;
+  width: 80%;
+}
+
+.aboutContent * {
+  margin: 40px auto 0;
+}
+
+.aboutContent a {
+  width: 200px;
+  font-size: 25;
+  margin: 40px auto 0;
+}
+
+.aboutContent h2 {
+  font-size: 50px;
+}
+
+
 
 .homeBanner {
   background-image: url("../plantedFinalAssets/homeImage1.jpg");
