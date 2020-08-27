@@ -6,6 +6,10 @@ $yellow: #f8e71c;
 
 $bigFont: Josefin Sans;
 
+@mixin imgShadow {
+    box-shadow: 20px 20px 0px -5px $yellow; 
+}
+
 @mixin heading($fontColor: $black, $fontSize: 2rem, $fontWeight: 700) {
     color: $fontColor;
     font-size: $fontSize;
@@ -57,5 +61,13 @@ a {
     display: inline-block;
     background-color: $green;
     color: $offWhite;
-    padding: 20px 40px
+    padding: 5px 20px;
+    font-size: 20px;
+    border: 3px $offWhite solid;
+    transition: border 0.3s ease-in-out;
+
+    &:hover,
+    &:focus {
+        border: 3px $yellow solid;
+    }
 }

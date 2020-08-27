@@ -1,5 +1,6 @@
 footer {
     background-color: $black;
+    text-align: center;
 
     p {
         color: $offWhite;
@@ -10,12 +11,19 @@ footer {
     a {
         font-family: 'Roboto';
         letter-spacing: 1px;
-        transition: all 0.2s ease-in-out;
+        span {
+            transition: all 0.2s ease-in-out;
+        }
     }
 
     a:focus,
     a:hover {
-        letter-spacing: 5px;
-        color: $yellow;
+        span {
+            color: $yellow;
+        }
+    }
+
+    .copy {
+        font-size: 14px;
     }
 }

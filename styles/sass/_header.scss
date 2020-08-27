@@ -3,17 +3,19 @@ header {
     padding: 30px 0 100px;
 }
 
-    .skipLink {
-        position: absolute;
-        right: -1000px;
-        top: 5px;
-        z-index: 20;
-        background-color: $yellow;
-        font-weight: 700;
-        font-size: 1rem;
-        text-transform: uppercase;
-        padding: 20px;
-    }
+.skipLink {
+    position: absolute;
+    right: 10000px;
+    top: 5px;
+    z-index: 20;
+    background-color: $yellow;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 20px;
+    width: 20%;
+    text-align: center;
+}
 
 .skipLink:focus {
     right: 10px;
@@ -55,7 +57,7 @@ ul {
 .headerImg {
     height: 80%;
     width: 41%;
-    position: relative;
+    position: absolute;
     bottom: -80px;
     right: 0;
     img {
@@ -64,13 +66,14 @@ ul {
 }
 
 .heading1 {
-    margin: 0 auto;
-    width: 50%;
-    height: 100%;
+    margin: 220px auto 0;
+    width: 40%;
+    height: 100vh;
+    position: relative;
     z-index: 10;
 
     h1 {
-        @include heading($yellow, 166px, 400);
+        @include heading($yellow, 140px, 400);
         line-height: 120px;
         .white {
             color: $offWhite;    
@@ -82,11 +85,8 @@ ul {
     width: 50%;
 
     h1 {
-        color: #f8e71c;
-        font-size: 9rem;
-        font-weight: 400;
-        font-family: 'Josefin Sans';
-        line-height: 120px;
+        @include heading($yellow, 80px, 400);
+        line-height: 80px;
     }
 }
 
@@ -95,12 +95,8 @@ ul {
     width: 50%;
 
     h1 {
-        color: #f8e71c;
-        font-size: 7rem;
-        font-weight: 400;
-        font-family: 'Josefin Sans';
-        line-height: 120px;
-        color: lawngreen;;
+        @include heading($yellow, 80px, 400);
+        line-height: 80px;
     }
 }
 

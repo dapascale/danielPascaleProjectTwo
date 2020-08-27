@@ -275,20 +275,19 @@ a {
   color: inherit;
 }
 
-a.button {
-  display: block;
+.button {
+  display: inline-block;
   background-color: #0e902d;
   color: #f0efed;
+  padding: 5px 20px;
   font-size: 20px;
-  padding: 10px 20px;
-  border: 3px solid #f0efed;
-  margin: 0 auto;
-  transition: all 0.3s ease-in-out;
+  border: 3px #f0efed solid;
+  -webkit-transition: border 0.3s ease-in-out;
+  transition: border 0.3s ease-in-out;
 }
 
-a.button:focus,
-a.button:hover {
-  border: 3px solid #f8e71c;
+.button:hover, .button:focus {
+  border: 3px #f8e71c solid;
 }
 
 header {
@@ -296,9 +295,9 @@ header {
   padding: 30px 0 100px;
 }
 
-header .skipLink {
+.skipLink {
   position: absolute;
-  right: -1000px;
+  right: 10000px;
   top: 5px;
   z-index: 20;
   background-color: #f8e71c;
@@ -306,14 +305,16 @@ header .skipLink {
   font-size: 1rem;
   text-transform: uppercase;
   padding: 20px;
+  width: 20%;
+  text-align: center;
 }
 
-header .skipLink:focus {
+.skipLink:focus {
   right: 10px;
   top: 10px;
 }
 
-header nav ul {
+ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -327,14 +328,14 @@ header nav ul {
   margin: 0 auto 0 20px;
 }
 
-nav li a {
+ul li a {
   color: #f0efed;
   padding: 10px 20px;
   text-transform: uppercase;
   font-size: 1rem;
 }
 
-nav ul .logo {
+ul .logo {
   text-transform: capitalize;
   font-size: 2.5rem;
 }
@@ -365,17 +366,16 @@ ul li a:focus {
 }
 
 .heading1 {
-  margin: 0 auto;
-  width: 42%;
-  height: 100px;
+  margin: 220px auto 0;
+  width: 40%;
+  height: 100vh;
   position: relative;
-  top: 100px;
   z-index: 10;
 }
 
 .heading1 h1 {
   color: #f8e71c;
-  font-size: 9rem;
+  font-size: 140px;
   font-weight: 400;
   font-family: 'Josefin Sans';
   line-height: 120px;
@@ -385,18 +385,17 @@ ul li a:focus {
   color: #f0efed;
 }
 
-/* this is where you began writing code directly in, come back and edit later, but you also edited nesting */
-/* .heading2 {
+.heading2 {
   margin: 0 auto;
   width: 50%;
 }
 
 .heading2 h1 {
   color: #f8e71c;
-  font-size: 9rem;
+  font-size: 80px;
   font-weight: 400;
   font-family: 'Josefin Sans';
-  line-height: 120px;
+  line-height: 80px;
 }
 
 .heading3 {
@@ -406,40 +405,11 @@ ul li a:focus {
 
 .heading3 h1 {
   color: #f8e71c;
-  font-size: 7rem;
+  font-size: 80px;
   font-weight: 400;
   font-family: 'Josefin Sans';
-  line-height: 120px;
+  line-height: 80px;
 }
-
-.about {
-  padding: 100px 0 150px;
-  background-color: #f0efed;
-}
-
-.aboutContent {
-  display: flex;
-  flex-direction: column;
-  margin: 100px auto 0;
-  text-align: center;
-  width: 80%;
-}
-
-.aboutContent * {
-  margin: 40px auto 0;
-}
-
-.aboutContent a {
-  width: 200px;
-  font-size: 25;
-  margin: 40px auto 0;
-}
-
-.aboutContent h2 {
-  font-size: 50px;
-} */
-
-
 
 .homeBanner {
   background-image: url("../plantedFinalAssets/homeImage1.jpg");
@@ -457,4 +427,291 @@ ul li a:focus {
   background-image: url("../plantedFinalAssets/contactHeader1.jpg");
   background-position: left;
   background-size: cover;
+}
+
+.about {
+  background-color: #f0efed;
+  padding: 80px 0 160px;
+}
+
+.aboutContent {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.aboutContent h2 {
+  color: #2c2c2c;
+  font-size: 50px;
+  font-weight: 700;
+  font-family: 'Josefin Sans';
+  margin: 100px 0 30px;
+}
+
+.aboutContent p {
+  margin-bottom: 30px;
+}
+
+.news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.columnOne,
+.columnTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(50% - 100px);
+}
+
+.columnOne .newsImg img,
+.columnTwo .newsImg img {
+  width: 100%;
+}
+
+.columnOne .newsText,
+.columnTwo .newsText {
+  width: 80%;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.columnOne .newsText h3,
+.columnTwo .newsText h3 {
+  color: 32px;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'Josefin Sans';
+  margin-bottom: 20px;
+}
+
+.columnOne .newsText p,
+.columnTwo .newsText p {
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+.columnOne {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 100px;
+  text-align: right;
+}
+
+.columnOne .newsText {
+  margin: 0 -15px 0 auto;
+}
+
+.columnOne .newsImg img {
+  -webkit-box-shadow: 20px 20px 0px -5px #f8e71c;
+          box-shadow: 20px 20px 0px -5px #f8e71c;
+  position: relative;
+  bottom: 30px;
+}
+
+.columnTwo {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  margin-left: 100px;
+  text-align: left;
+}
+
+.columnTwo .newsText {
+  margin: 0 auto 0 0;
+}
+
+.columnTwo .newsImg img {
+  -webkit-box-shadow: 20px 20px 0px -5px #f8e71c;
+          box-shadow: 20px 20px 0px -5px #f8e71c;
+  position: relative;
+  top: 30px;
+}
+
+.moreInfo {
+  background-color: #f0efed;
+  padding: 100px 0 80px;
+}
+
+.infoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+  width: 90%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.infoBox {
+  width: calc(100% / 2 - 60px);
+  padding: 40px 0;
+  margin: 0 30px;
+}
+
+.infoBox h3 {
+  color: 32px;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'Josefin Sans';
+  margin-bottom: 20px;
+  position: relative;
+  right: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.infoBox h3 a {
+  -webkit-text-decoration: 2px underline transparent;
+          text-decoration: 2px underline transparent;
+  -webkit-transition: all, 0.3s ease-in-out;
+  transition: all, 0.3s ease-in-out;
+}
+
+.infoBox h3 a:hover,
+.infoBox h3 a:focus {
+  -webkit-text-decoration: 2px underline #f8e71c;
+          text-decoration: 2px underline #f8e71c;
+}
+
+.infoBox h3 i {
+  position: relative;
+  right: 15px;
+  bottom: 10px;
+  background-color: #f8e71c;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 7px;
+}
+
+.infoBox p {
+  line-height: 25px;
+}
+
+.narcissist {
+  background-color: #f0efed;
+}
+
+.founderBanner {
+  height: 421px;
+}
+
+.founderBanner img {
+  width: 100%;
+}
+
+.founder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 100px 0;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.founderContainer {
+  width: 25%;
+}
+
+.founderContainer img {
+  width: 100%;
+  -webkit-box-shadow: 20px 20px 0px -5px #f8e71c;
+          box-shadow: 20px 20px 0px -5px #f8e71c;
+}
+
+.founderText {
+  width: calc(75% - 120px);
+  margin-left: 120px;
+  margin-top: 20px;
+}
+
+.founderText h3 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.founderText a {
+  margin-top: 20px;
+}
+
+.gallery {
+  padding: 100px 0;
+}
+
+.insta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
+}
+
+.imgContainer {
+  width: calc(100% / 3 - 40px);
+  margin: 0 auto;
+}
+
+.imgContainer img {
+  width: 100%;
+}
+
+footer {
+  background-color: #2c2c2c;
+  text-align: center;
+}
+
+footer p {
+  color: #f0efed;
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+footer a {
+  font-family: 'Roboto';
+  letter-spacing: 1px;
+}
+
+footer a span {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+footer a:focus span,
+footer a:hover span {
+  color: #f8e71c;
+}
+
+footer .copy {
+  font-size: 14px;
 }

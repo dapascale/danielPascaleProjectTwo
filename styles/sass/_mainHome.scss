@@ -1,0 +1,200 @@
+.about {
+    background-color: $offWhite;
+    padding: 80px 0 160px;
+}
+
+.aboutContent {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+        @include heading($black, 50px, 700);
+        margin: 100px 0 30px;
+    }
+
+    p {
+        margin-bottom: 30px;
+    }
+}
+
+.news {
+    display: flex;
+    flex-direction: row;
+}
+
+.columnOne,
+.columnTwo {
+    display: flex;
+    width: calc(50% - 100px);
+
+    .newsImg img {
+        width: 100%;
+    }
+
+    .newsText {
+        width: 80%;
+        padding-top: 60px;
+        padding-bottom: 40px;
+
+        h3 {
+            @include heading(32px);
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 25px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.columnOne {
+    flex-direction: column;
+    margin-right: 100px;
+    text-align: right;
+
+    .newsText {
+        margin: 0 -15px 0 auto;
+    }
+
+    .newsImg img {
+        @include imgShadow;
+        position: relative;
+        bottom: 30px;
+    }
+}
+
+.columnTwo {
+    flex-direction: column-reverse;
+    margin-left: 100px;
+    text-align: left;
+
+    .newsText {
+        margin: 0 auto 0 0;
+    }
+
+    .newsImg img {
+        @include imgShadow;
+        position: relative;
+        top: 30px;
+    }
+}
+
+.moreInfo {
+    background-color: $offWhite;
+    padding: 100px 0 80px;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.infoBox {
+    width: calc(100% / 2 - 60px);
+    padding: 40px 0;
+    margin: 0 30px;
+
+    h3 {
+        @include heading(32px);
+        margin-bottom: 20px;
+        position: relative;
+        right: 45px;
+        display: flex;
+
+        a {
+            text-decoration: 2px underline transparent;
+            transition: all, 0.3s ease-in-out;
+        }
+
+        a:hover,
+        a:focus {
+            text-decoration: 2px underline $yellow;
+        }
+
+        i {
+            position: relative;
+            right: 15px;
+            bottom: 10px;
+            background-color: $yellow;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 25px;
+            text-align: center;
+            padding-top: 7px;
+        }
+    }
+
+    p {
+        line-height: 25px;
+    }
+}
+
+.narcissist {
+    background-color: $offWhite;
+}
+
+.founderBanner {
+    height: 421px;
+    img {
+        width: 100%;
+    }
+}
+
+.founder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 100px 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.founderContainer {
+    width: 25%;
+    img {
+        width: 100%;
+        @include imgShadow
+    }
+}
+
+.founderText {
+    width: calc(75% - 120px);
+    margin-left: 120px;
+    margin-top: 20px;
+    h3 {
+        font-size: 42px;
+        margin-bottom: 20px;
+    }
+    a {
+        margin-top: 20px;
+    }
+}
+
+.gallery {
+    padding: 100px 0;
+}
+
+.insta {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.imgContainer {
+    width: calc(100% / 3 - 40px);
+    margin: 0 auto;
+    img {
+        width: 100%;
+    }
+}
+
+
+
