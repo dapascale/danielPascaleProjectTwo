@@ -13,8 +13,10 @@ $bigFont: Josefin Sans;
     font-family: 'Josefin Sans';
 }
 
-html {
-    font-size: 62.5%;
+@mixin headerImg($headerImg) {
+    background-image: url($headerImg);
+    background-position: left;
+    background-size: cover;
 }
 
     // The below code came from a post on css-tricks.com on Fluid Typography, and its author is Mike Riethmueller (https://www.madebymike.com.au/).
@@ -23,9 +25,9 @@ html {
 body {
     font-family: 'Roboto';
     font-weight: 400;
-    font-size: 2rem;
-    // font-size: calc(1rem + (8rem - 1rem) * ((100vw - 320px) / (1400 - 320)));
-    line-height: 3.2rem;
+    // font-size: 2rem;
+    font-size: calc(10px + (30px - 10px) * ((100vw - 320px) / (1400px - 320px)));
+    line-height: 32px;
     color: $black;
 }
 
@@ -33,6 +35,13 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+a {
+    font-family: $bigFont;
 }
 
 ul {
@@ -48,6 +57,5 @@ a {
     display: inline-block;
     background-color: $green;
     color: $offWhite;
-    font-family: $bigFont;
     padding: 20px 40px
 }
