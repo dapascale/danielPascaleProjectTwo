@@ -705,7 +705,7 @@ ul li a:focus {
 
 .contact {
   background-color: #f0efed;
-  padding: 100px 0;
+  padding: 100px 0 160px;
 }
 
 .mainContact {
@@ -723,6 +723,7 @@ ul li a:focus {
 
 .lefty {
   margin-left: 60px;
+  line-height: 25px;
 }
 
 .lefty i {
@@ -755,10 +756,28 @@ address .email {
   display: block;
   font-weight: 700;
   font-size: 20px;
+  -webkit-text-decoration: underline 3px #f0efed;
+          text-decoration: underline 3px #f0efed;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+address .email:focus, address .email:hover {
+  -webkit-text-decoration: underline 3px #f8e71c;
+          text-decoration: underline 3px #f8e71c;
 }
 
 address .phone {
   font-family: 'Roboto';
+  -webkit-text-decoration: underline 3px #f0efed;
+          text-decoration: underline 3px #f0efed;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+address .phone:focus, address .phone:hover {
+  -webkit-text-decoration: underline 3px #f8e71c;
+          text-decoration: underline 3px #f8e71c;
 }
 
 form {
@@ -771,9 +790,9 @@ form {
           flex-direction: column;
   position: absolute;
   right: 80px;
-  bottom: -70px;
-  width: 50%;
-  height: 70vh;
+  bottom: -90px;
+  width: 60%;
+  height: 75vh;
   padding: 80px 40px 40px;
   background-color: #fff;
   -webkit-box-shadow: -20px 20px 0px -5px #f8e71c;
@@ -803,19 +822,21 @@ form .formFieldTop {
 }
 
 form .top {
-  width: calc(50% - 40px);
+  width: 40%;
   height: 40px;
-  border-bottom: solid 3px #0e902d;
+  border-bottom: solid 2px #0e902d;
 }
 
 form .message {
-  width: 100%;
-  height: 200px;
-  border: solid 3px #0e902d;
+  width: 95%;
+  height: 250px;
+  padding: 10px;
+  border: solid 2px #0e902d;
 }
 
 form .button {
-  width: 30%;
+  width: 96%;
+  margin-left: 16px;
 }
 
 footer {
