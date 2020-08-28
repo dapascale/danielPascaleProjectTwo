@@ -1,0 +1,91 @@
+.contact {
+    background-color: $offWhite;
+    padding: 100px 0;
+}
+
+.mainContact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lefty {
+    margin-left: 60px;
+    i {
+        color: $green;
+        background-color: none;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        padding: 5px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        text-align: center;
+        transition: background-color, 0.3s ease-in-out;
+        &:hover,
+        &:focus {
+            background-color: $yellow;
+        }
+    }
+}
+
+// form start
+
+address {
+    font-style: normal;
+    font-size: 16px;
+    font-family: 'Roboto';
+    letter-spacing: 1px;
+    margin-left: 10px;
+    .email {
+        display: block;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .phone {
+        font-family: 'Roboto';
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 80px;
+    bottom: -70px;
+    width: 50%;
+    height: 70vh;
+    padding: 80px 40px 40px;
+    background-color: #fff;
+    @include imgShadow;
+    input {
+        margin: 20px;
+    }
+    .hideThis {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+    .formFieldTop {
+        flex-direction: row;
+    }
+    .top {
+        width: 30%;
+        height: 40px;
+        border-bottom: solid 3px $green;
+    }
+    .message {
+        width: 100%;
+        height: 200px;
+        border: solid 3px $green;
+    }
+
+    .button {
+        width: 30%;
+    }
+}

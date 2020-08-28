@@ -6,8 +6,8 @@ $yellow: #f8e71c;
 
 $bigFont: Josefin Sans;
 
-@mixin imgShadow {
-    box-shadow: 20px 20px 0px -5px $yellow; 
+@mixin imgShadow($shadow: -20px) {
+    box-shadow: $shadow 20px 0px -5px $yellow; 
 }
 
 @mixin heading($fontColor: $black, $fontSize: 2rem, $fontWeight: 700) {

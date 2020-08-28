@@ -292,7 +292,11 @@ a {
 
 header {
   height: 100vh;
-  padding: 30px 0 100px;
+  padding: 0 0 100px;
+}
+
+header.blogBanner, header.bruceBanner {
+  height: 70vh;
 }
 
 .skipLink {
@@ -314,6 +318,16 @@ header {
   top: 10px;
 }
 
+nav {
+  width: 100%;
+  height: 60px;
+  padding-top: 20px;
+}
+
+nav.leftHome {
+  background-color: #080808;
+}
+
 ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -324,15 +338,16 @@ ul {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 55%;
-  margin: 0 auto 0 20px;
+  width: 50%;
+  margin-left: 90px;
 }
 
 ul li a {
   color: #f0efed;
-  padding: 10px 20px;
+  padding: 10px 15px;
   text-transform: uppercase;
   font-size: 1rem;
+  font-weight: 600;
 }
 
 ul .logo {
@@ -392,23 +407,24 @@ ul li a:focus {
 
 .heading2 h1 {
   color: #f8e71c;
-  font-size: 80px;
-  font-weight: 400;
+  font-size: 70px;
+  font-weight: 500;
   font-family: 'Josefin Sans';
   line-height: 80px;
 }
 
 .heading3 {
-  margin: 0 auto 0 100px;
-  width: 50%;
+  margin: 240px 60px 0 140px;
+  width: 20%;
 }
 
 .heading3 h1 {
   color: #f8e71c;
-  font-size: 80px;
-  font-weight: 400;
+  font-size: 60px;
+  font-weight: 700;
   font-family: 'Josefin Sans';
-  line-height: 80px;
+  line-height: 70px;
+  width: 100%;
 }
 
 .homeBanner {
@@ -531,8 +547,8 @@ ul li a:focus {
 }
 
 .columnTwo .newsImg img {
-  -webkit-box-shadow: 20px 20px 0px -5px #f8e71c;
-          box-shadow: 20px 20px 0px -5px #f8e71c;
+  -webkit-box-shadow: -20px 20px 0px -5px #f8e71c;
+          box-shadow: -20px 20px 0px -5px #f8e71c;
   position: relative;
   top: 30px;
 }
@@ -641,8 +657,8 @@ ul li a:focus {
 
 .founderContainer img {
   width: 100%;
-  -webkit-box-shadow: 20px 20px 0px -5px #f8e71c;
-          box-shadow: 20px 20px 0px -5px #f8e71c;
+  -webkit-box-shadow: -20px 20px 0px -5px #f8e71c;
+          box-shadow: -20px 20px 0px -5px #f8e71c;
 }
 
 .founderText {
@@ -675,15 +691,131 @@ ul li a:focus {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 80%;
+  margin: 0 auto;
 }
 
 .imgContainer {
   width: calc(100% / 3 - 40px);
-  margin: 0 auto;
+  margin: 0 20px;
 }
 
 .imgContainer img {
   width: 100%;
+}
+
+.contact {
+  background-color: #f0efed;
+  padding: 100px 0;
+}
+
+.mainContact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.lefty {
+  margin-left: 60px;
+}
+
+.lefty i {
+  color: #0e902d;
+  background-color: none;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  padding: 5px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: center;
+  -webkit-transition: background-color, 0.3s ease-in-out;
+  transition: background-color, 0.3s ease-in-out;
+}
+
+.lefty i:hover, .lefty i:focus {
+  background-color: #f8e71c;
+}
+
+address {
+  font-style: normal;
+  font-size: 16px;
+  font-family: 'Roboto';
+  letter-spacing: 1px;
+  margin-left: 10px;
+}
+
+address .email {
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+address .phone {
+  font-family: 'Roboto';
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  right: 80px;
+  bottom: -70px;
+  width: 50%;
+  height: 70vh;
+  padding: 80px 40px 40px;
+  background-color: #fff;
+  -webkit-box-shadow: -20px 20px 0px -5px #f8e71c;
+          box-shadow: -20px 20px 0px -5px #f8e71c;
+}
+
+form input {
+  margin: 20px;
+}
+
+form .hideThis {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+form .formFieldTop {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+form .top {
+  width: calc(50% - 40px);
+  height: 40px;
+  border-bottom: solid 3px #0e902d;
+}
+
+form .message {
+  width: 100%;
+  height: 200px;
+  border: solid 3px #0e902d;
+}
+
+form .button {
+  width: 30%;
 }
 
 footer {
