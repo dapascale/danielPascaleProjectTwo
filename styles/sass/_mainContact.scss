@@ -72,6 +72,10 @@ address {
     input {
         margin: 20px;
     }
+    .button {
+    width: 96%;
+    margin-left: 16px;
+    }
 }
 
 .hideThis {
@@ -100,7 +104,4 @@ address {
     color: $forestGreen;
 }
 
-.button {
-    width: 96%;
-    margin-left: 16px;
-}
+// TODO fix form centering in messages

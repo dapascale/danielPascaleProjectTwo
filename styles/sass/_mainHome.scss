@@ -36,12 +36,10 @@
         width: 80%;
         padding-top: 60px;
         padding-bottom: 40px;
-
         h3 {
             @include heading(32px);
             margin-bottom: 20px;
         }
-
         p {
             line-height: 25px;
             margin-bottom: 20px;
@@ -53,11 +51,9 @@
     flex-direction: column;
     margin-right: 100px;
     text-align: right;
-
     .newsText {
         margin: 0 -15px 0 auto;
     }
-
     .newsImg img {
         @include imgShadow(20px);
         position: relative;
@@ -69,11 +65,9 @@
     flex-direction: column-reverse;
     margin-left: 100px;
     text-align: left;
-
     .newsText {
         margin: 0 auto 0 0;
     }
-
     .newsImg img {
         @include imgShadow;
         position: relative;
