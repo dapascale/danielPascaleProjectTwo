@@ -1,0 +1,178 @@
+.blog {
+    background-color: $offWhite;
+    padding: 100px 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: min-content - 250px;
+}
+
+aside {
+    background-color: #fff;
+    width: 20%;
+    height: auto;
+    margin: 0 100px;
+    padding: 20px;
+    height: min-content;
+}
+
+.asideImg {
+    height: 300px;
+    position: relative;
+    margin-bottom: -20px;
+    img {
+        height: 100%;
+        position: absolute;
+        right: -5px;
+        top: -40px;
+    }
+}
+
+.asideBlog,
+.recentPosts {
+    h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 14px;
+    }
+    a {
+        text-decoration: underline 2px transparent;
+        transition: all 0.2s ease-in-out;
+        &:hover,
+        &:focus {
+            text-decoration: underline 2px $yellow;
+        }
+    }
+    line-height: 25px;
+}
+
+.asideBlog {
+    a {
+        color: $forestGreen;
+        font-weight: 700;
+        font-style: italic;
+    }
+    margin-bottom: 40px;
+}
+
+.recentPosts {
+    ul {
+        list-style-type: disc;
+        flex-direction: column;
+        margin-left: 0;
+        color: $forestGreen;
+        width: 100%;
+        padding-left: 20px;
+    }
+    li a {
+        font-size: 14px;
+        font-weight: 400;
+        color: $black;
+        text-transform: capitalize;
+        &:hover,
+        &:focus {
+            color: $black;
+        }
+    }
+}
+
+.mainBlog {
+    width: 65%;
+    position: relative;
+    bottom: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mainBlogImg {
+    width: 100%;
+    img {
+        width: 100%;
+        height: 100%;
+        @include imgShadow;
+    }
+}
+
+.mainBlogText {
+    position: relative;
+    right: 59px;
+    padding: 40px;
+    border-left: 5px solid $yellow;
+    border-bottom: 5px solid $yellow;
+    h2 {
+        font-size: 43px;
+        font-weight: 700;
+        margin-top: 40px;
+    }
+    .date {
+        margin-top: 10px;
+        margin-bottom: 40px;
+        font-style: italic;
+        color: $forestGreen;
+        a {
+            font-weight: 700;
+            text-decoration: underline 2px solid transparent;
+            transition: all 0.3s ease-in-out;
+            &:hover,
+            &:focus {
+                text-decoration: underline 2px solid $yellow;
+            }
+        }
+    }
+    p {
+        margin-top: 10px;
+    }
+}
+.postedComms {
+    padding: 30px;
+}
+
+h4 {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Josefin Sans';
+    margin: 40px 0;
+}
+
+.userComms {
+    display: flex;
+    margin-bottom: 80px;
+    img {
+        height: 92px;
+        width: 94px;
+        margin: 5px 0;
+    }
+    .posted {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin-left: 40px;
+        .userDate {
+            font-weight: 700;
+            font-size: 20px;
+            font-family: 'Josefin Sans';
+            color: $forestGreen;
+        }
+    }
+}
+
+.blogForm {
+    .top {
+        width: 45%;
+    }
+    .topOne {
+        margin-right: 30px
+    }
+    .top,
+    .message {
+        margin-bottom: 40px;
+    }
+    .button {
+        margin-left: 0;
+        font-family: 'Josefin Sans';
+    }
+}

@@ -94,17 +94,18 @@ ul {
     }
 }
 .heading2 {
-    margin: 0 auto;
-    width: 50%;
+    margin: 18% 60px 0 140px;
+    width: 20%;
 
     h1 {
-        @include heading($yellow, 70px, 500);
-        line-height: 80px;
+        @include heading($yellow, 60px, 700);
+        line-height: 70px;
+        width: 100%;
     }
 }
 
 .heading3 {
-    margin: 240px 60px 0 140px;
+    margin: 18% 60px 0 140px;
     width: 20%;
 
     h1 {
