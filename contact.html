@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planted</title>
+    <link rel="icon" type="image/icon" href="./plantedFinalAssets/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
 
@@ -13,6 +14,7 @@
 <body>
 
     <header class="bruceBanner">
+        <span><a href="#"><i class="fas fa-bars"></i></a></span>
         <nav class="leftHome">
             <ul>
                 <li><a href="./index.html" class="logo">Planted</a></li>
@@ -43,14 +45,14 @@
                         </address>
                     </div>
                     <form class="form" action="#">
-                        <div>
+                        <div class="topField">
                             <label for="name" class="hideThis">Full name:</label>
-                            <input type="name" id="name" placeholder="    Name" class="top" required>
+                            <input type="name" id="name" placeholder="Name" class="top" required>
                             <label for="email" class="hideThis">Email address:</label>
-                            <input type="email" id="email" class="top" placeholder="    Email address" required>
+                            <input type="email" id="email" class="top" placeholder="Email address" required>
                         </div>
                         <label for="text" class="hideThis">Message:</label>
-                        <input type="text" id="text" placeholder="    Message" class="message" required>
+                        <textarea id="text" placeholder="Message" class="message" cols="1" rows="10" required></textarea>
                         <button type="submit" class="button">Submit</button>
                     </form>
                 </div>

@@ -66,11 +66,13 @@ address {
     bottom: -90px;
     width: 60%;
     height: min-content;
-    padding: 80px 40px 40px;
+    padding: 40px 40px;
     background-color: #fff;
     @include imgShadow;
-    input {
-        margin: 20px;
+    input,
+    textarea {
+        margin: 40px 20px 20px;
+        padding: 20px;
     }
     .button {
     width: 96%;
@@ -89,6 +91,12 @@ address {
     width: 1px;
 }
 
+.topField {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
 .top {
     width: 44%;
     height: 40px;
@@ -98,10 +106,8 @@ address {
 
 .message {
     width: 95%;
-    height: 250px;
+    height: 220px;
     padding: 0;
     border: solid 2px $green;
     color: $forestGreen;
 }
-
-// TODO fix form centering in messages

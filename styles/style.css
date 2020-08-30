@@ -248,7 +248,7 @@ html {
 body {
   font-family: 'Roboto';
   font-weight: 400;
-  font-size: calc(10px + (30px - 10px) * ((100vw - 320px) / (1400px - 320px)));
+  font-size: calc(10px + 6 * ((100vw - 320px) / 680));
   line-height: 32px;
   color: #2c2c2c;
 }
@@ -299,6 +299,7 @@ a {
 header {
   height: 100vh;
   padding: 0 0 100px;
+  position: relative;
 }
 
 header.blogBanner, header.bruceBanner {
@@ -432,6 +433,15 @@ ul li a:focus {
   font-family: 'Josefin Sans';
   line-height: 70px;
   width: 100%;
+}
+
+.fa-bars {
+  position: absolute;
+  color: #f0efed;
+  top: 15px;
+  left: 25%;
+  font-size: 2.2rem;
+  visibility: hidden;
 }
 
 .homeBanner {
@@ -795,14 +805,16 @@ address .phone:focus, address .phone:hover {
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
-  padding: 80px 40px 40px;
+  padding: 40px 40px;
   background-color: #fff;
   -webkit-box-shadow: -20px 20px 0px -5px #f8e71c;
           box-shadow: -20px 20px 0px -5px #f8e71c;
 }
 
-.form input {
-  margin: 20px;
+.form input,
+.form textarea {
+  margin: 40px 20px 20px;
+  padding: 20px;
 }
 
 .form .button {
@@ -821,6 +833,19 @@ address .phone:focus, address .phone:hover {
   width: 1px;
 }
 
+.topField {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .top {
   width: 44%;
   height: 40px;
@@ -830,7 +855,7 @@ address .phone:focus, address .phone:hover {
 
 .message {
   width: 95%;
-  height: 250px;
+  height: 220px;
   padding: 0;
   border: solid 2px #0e902d;
   color: #074115;
@@ -1050,6 +1075,10 @@ h4 {
   color: #074115;
 }
 
+.blogForm {
+  margin-bottom: -200px;
+}
+
 .blogForm .top {
   width: 45%;
 }
@@ -1097,4 +1126,158 @@ footer a:hover span {
 
 footer .copy {
   font-size: 14px;
+}
+
+@media (max-width: 940px) {
+  .heading1 {
+    width: 60%;
+  }
+  .blog {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 75%;
+    position: relative;
+    bottom: 80px;
+    margin-top: 60px;
+  }
+  aside .asideImg {
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+  }
+  aside .asideBlog {
+    width: 50%;
+  }
+  .mainBlog {
+    width: 90%;
+    margin: 0 auto;
+    bottom: 220px;
+  }
+  .mainBlog .mainBlogText {
+    right: 56px;
+  }
+  .form {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    max-width: 768px;
+  }
+  header ul li {
+    position: relative;
+    left: 20%;
+    visibility: hidden;
+  }
+  header ul li:first-of-type {
+    visibility: visible;
+  }
+  header .fa-bars {
+    visibility: visible;
+    position: absolute;
+    left: 35%;
+  }
+  .heading1,
+  .heading2,
+  .heading3 {
+    margin: 100px auto 0;
+    text-align: center;
+    width: 100%;
+  }
+  .heading1 {
+    margin-top: 200px;
+  }
+  .columnOne,
+  .columnTwo {
+    margin: 0 auto;
+  }
+  .mainBlogText {
+    right: 30px;
+  }
+  .mainContact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .mainContact .form {
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+    bottom: 200px;
+    right: 0;
+  }
+  .mainContact .lefty {
+    margin-top: -100px;
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .wrapper {
+    max-width: 420px;
+    width: 100%;
+  }
+  header ul li {
+    left: 50%;
+  }
+  header .fa-bars {
+    left: 85%;
+  }
+  .mainBlog {
+    margin: 0 15px;
+  }
+  .mainBlog h2 {
+    line-height: 40px;
+  }
+  .mainBlog .mainBlogText {
+    right: 15px;
+    padding: 10px;
+    font-size: 14px;
+  }
+  .mainBlog .userComms {
+    padding: 5px;
+    line-height: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .mainBlog .userComms .userDate {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .mainBlog .userComms .posted {
+    margin-top: 20px;
+    margin-left: 0;
+    width: 100%;
+    font-size: 14px;
+  }
+  .blogForm .top {
+    width: 95%;
+  }
+  aside {
+    margin: 50px auto 0;
+  }
+  aside .asideBlog {
+    width: 95%;
+  }
+  aside .asideImg {
+    visibility: hidden;
+  }
 }
