@@ -266,7 +266,8 @@ a {
   font-family: Josefin Sans;
 }
 
-input {
+input,
+textarea {
   font-family: 'Josefin Sans';
   font-size: 20px;
 }
@@ -1098,6 +1099,10 @@ h4 {
   font-family: 'Josefin Sans';
 }
 
+.blogForm textarea {
+  padding: 10px;
+}
+
 footer {
   background-color: #2c2c2c;
   text-align: center;
@@ -1238,6 +1243,115 @@ footer .copy {
   header .fa-bars {
     left: 85%;
   }
+  header {
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+  }
+  .headerImg {
+    width: 60%;
+    height: auto;
+  }
+  .heading1 {
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+  }
+  .heading1 h1 {
+    font-size: 75px;
+    line-height: 75px;
+  }
+  .about {
+    padding: 100px 0 50px;
+  }
+  .about p {
+    font-size: 14px;
+  }
+  .aboutContent h2 {
+    line-height: 50px;
+    margin-top: 20px;
+  }
+  .news {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .columnOne,
+  .columnTwo {
+    width: 90%;
+    text-align: center;
+  }
+  .columnOne .newsImg img,
+  .columnTwo .newsImg img {
+    bottom: 0;
+  }
+  .columnOne .newsText,
+  .columnTwo .newsText {
+    width: 100%;
+    margin: 0;
+  }
+  .columnOne .newsText p,
+  .columnTwo .newsText p {
+    font-size: 14px;
+  }
+  .columnTwo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .infoContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .infoBox {
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  .infoBox h3 i {
+    right: -300px;
+    bottom: 0;
+  }
+  .infoBox p {
+    font-size: 14px;
+  }
+  .founderBanner {
+    display: none;
+  }
+  .founder {
+    padding: 0;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .founder .founderContainer {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .founder h3 {
+    line-height: 40px;
+  }
+  .founder .founderText {
+    width: 90%;
+    margin: 40px auto;
+    font-size: 14px;
+  }
+  .insta {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 95%;
+  }
+  .insta .imgContainer {
+    width: 90%;
+  }
   .mainBlog {
     margin: 0 15px;
   }
@@ -1279,5 +1393,24 @@ footer .copy {
   }
   aside .asideImg {
     visibility: hidden;
+  }
+  .form {
+    padding: 5px;
+  }
+  .form .topField {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form .topField .top {
+    width: 85%;
+  }
+  .form textarea {
+    font-size: 20px;
+    width: 85%;
+  }
+  .form .button {
+    width: 89%;
   }
 }

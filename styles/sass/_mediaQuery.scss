@@ -119,6 +119,95 @@
         }
     }
 // Home
+    header {
+        height: min-content;
+    }
+    .headerImg {
+        width: 60%;
+        height: auto;
+    }
+    .heading1 {
+        height: min-content;
+        h1 {
+            font-size: 75px;
+            line-height: 75px;
+        }
+    }
+    .about {
+        padding: 100px 0 50px;
+        p {
+            font-size: 14px;
+        }
+    }
+    .aboutContent h2 {
+        line-height: 50px;
+        margin-top: 20px;
+    }
+    .news {
+        flex-direction: column;
+    }
+    .columnOne,
+    .columnTwo {
+        width: 90%;
+        text-align: center;
+        .newsImg img {
+            bottom: 0;
+        }
+        .newsText {
+            width: 100%;
+            margin: 0;
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+    .columnTwo {
+        flex-direction: column;
+    }
+    .infoContainer {
+        flex-direction: column;
+    }
+    .infoBox {
+        width: 100%;
+        padding: 10px;
+        margin: 0 auto;
+        h3 {
+            i {
+                right: -300px;
+                bottom: 0;
+            }
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+    .founderBanner {
+display: none;
+    }
+    .founder {
+        padding: 0;
+        width: 100%;
+        flex-direction: column;
+        .founderContainer {
+            width: 80%;
+            margin: 0 auto;
+        }
+        h3 {
+            line-height: 40px;
+        }
+        .founderText {
+            width: 90%;
+            margin: 40px auto;
+            font-size: 14px;
+        }
+    }
+    .insta {
+        flex-direction: column;
+        width: 95%;
+        .imgContainer {
+            width: 90%;
+        }
+    }
 
 // Blog
     .mainBlog {
@@ -164,5 +253,20 @@
 
 
 // Contact
-    
+    .form {
+        padding: 5px;
+        .topField {
+            flex-direction: column;
+            .top {
+                width: 85%;
+            }
+        }
+        textarea {
+            font-size: 20px;
+            width: 85%;
+        }
+        .button {
+            width: 89%;
+        }
+    }
 }
